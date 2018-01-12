@@ -56,6 +56,18 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
 
 	VectorXd y = z - z_pred;
 
+	/*Normalizing Angles
+	In C++, atan2() returns values between - pi and pi.When calculating phi in y = z - h(x)
+	for radar measurements, the resulting angle phi in the y vector should be adjusted so
+	that it is between - pi and pi.The Kalman filter is expecting small angle values
+	between the range - pi and pi.HINT: when working in radians, you can add 2*pi?
+	or subtract 2*pi? until the angle is within the desired range.
+	*/
+	if (y(1) > M_PI)
+		y(1) = y(1) - 2* M_PI;
+	else if (y(1) < -M_PI)
+		y(1) =  y(1) + 2 *M_PI;
+
 	MatrixXd Ht = H_.transpose();
 	MatrixXd S = H_ * P_ * Ht + R_;
 	MatrixXd Si = S.inverse();
