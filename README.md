@@ -128,5 +128,6 @@ still be compilable with cmake and make.
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 
 
-
+## This repository has been modified to run with Visual Studio 2017
 https://github.com/fkeidel/CarND-Term2-ide-profile-VisualStudio
+https://medium.com/@fzubair/udacity-carnd-term2-visual-studio-2015-17-setup-cca602e0b1cd

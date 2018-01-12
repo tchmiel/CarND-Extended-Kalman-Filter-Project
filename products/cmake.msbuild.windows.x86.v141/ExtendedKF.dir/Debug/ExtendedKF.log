@@ -1,4 +1,13 @@
-﻿  main.cpp
+﻿  FusionEKF.cpp
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\FusionEKF.cpp(89): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\FusionEKF.cpp(90): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\FusionEKF.cpp(114): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  kalman_filter.cpp
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(46): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(47): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(48): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(49): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  main.cpp
 e:\vcpkg\installed\x86-windows\include\uws\Networking.h(162): warning C4251: 'uS::TLS::Context::password': class 'std::shared_ptr<std::string>' needs to have dll-interface to be used by clients of class 'uS::TLS::Context'
   e:\vcpkg\installed\x86-windows\include\uws\Networking.h(162): note: see declaration of 'std::shared_ptr<std::string>'
 e:\vcpkg\installed\x86-windows\include\uws\Networking.h(214): warning C4251: 'uS::NodeData::transferQueue': class 'std::vector<Poll *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'uS::NodeData'
@@ -142,8 +151,10 @@ e:\vcpkg\installed\x86-windows\include\uws\WebSocket.h(16): warning C4251: 'uWS:
 e:\vcpkg\installed\x86-windows\include\uws\WebSocket.h(18): warning C4251: 'uWS::WebSocket<false>::fragmentBuffer': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'uWS::WebSocket<false>'
   E:\VisualStudio2017\VC\Tools\MSVC\14.12.25827\include\xstring(4054): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
   tools.cpp
-  FusionEKF.cpp
-  kalman_filter.cpp
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\tools.cpp(53): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\tools.cpp(54): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\tools.cpp(55): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\tools.cpp(56): warning C4244: 'initializing': conversion from 'const double' to 'float', possible loss of data
   Generating Code...
      Creating library Z:/SDCar/Term2/CarND-Extended-Kalman-Filter-Project/products/cmake.msbuild.windows.x86.v141/Debug/ExtendedKF.lib and object Z:/SDCar/Term2/CarND-Extended-Kalman-Filter-Project/products/cmake.msbuild.windows.x86.v141/Debug/ExtendedKF.exp
   ExtendedKF.vcxproj -> Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\products\cmake.msbuild.windows.x86.v141\Debug\ExtendedKF.exe
