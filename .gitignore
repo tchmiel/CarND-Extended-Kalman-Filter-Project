@@ -5,6 +5,7 @@
 build/
 
 # editor config
+.vs/
 .vscode/
 
 # Xcode
