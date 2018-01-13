@@ -1,6 +1,6 @@
 ﻿  kalman_filter.cpp
-Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(46): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(47): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(48): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(49): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(51): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(52): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(53): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\src\kalman_filter.cpp(54): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   ExtendedKF.vcxproj -> Z:\SDCar\Term2\CarND-Extended-Kalman-Filter-Project\products\cmake.msbuild.windows.x86.v141\Debug\ExtendedKF.exe

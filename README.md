@@ -129,5 +129,5 @@ A well written README file can enhance your project and portfolio.  Develop your
 
 
 ## This repository has been modified to run with Visual Studio 2017
-https://github.com/fkeidel/CarND-Term2-ide-profile-VisualStudio
-https://medium.com/@fzubair/udacity-carnd-term2-visual-studio-2015-17-setup-cca602e0b1cd
+I used fkeidel's [ide_profile/VisualStudio](https://github.com/fkeidel/CarND-Term2-ide-profile-VisualStudio) and followed his
+[additional instructions for setting up for Visual Studio 2017](https://medium.com/@fzubair/udacity-carnd-term2-visual-studio-2015-17-setup-cca602e0b1cd).

@@ -48,9 +48,13 @@ public:
   /**
    * Prediction Predicts the state and the state covariance
    * using the process model
-   * @param delta_T Time between k and k+1 in s
    */
   void Predict();
+
+  /**
+  * Update - called internally by Update and UpdateEKF
+  */
+  void KalmanFilter::UpdateNewEstimate(const Eigen::VectorXd &y);
 
   /**
    * Updates the state by using standard Kalman Filter equations

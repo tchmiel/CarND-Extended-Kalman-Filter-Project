@@ -26,9 +26,7 @@ void KalmanFilter::Predict() {
 	P_ = F_ * P_ * Ft + Q_;
 }
 
-void KalmanFilter::Update(const VectorXd &z) {
- 	VectorXd z_pred = H_ * x_;
-	VectorXd y = z - z_pred;
+void KalmanFilter::UpdateNewEstimate(const VectorXd &y) {
 	MatrixXd Ht = H_.transpose();
 	MatrixXd S = H_ * P_ * Ht + R_;
 	MatrixXd Si = S.inverse();
@@ -40,6 +38,13 @@ void KalmanFilter::Update(const VectorXd &z) {
 	long x_size = x_.size();
 	MatrixXd I = MatrixXd::Identity(x_size, x_size);
 	P_ = (I - K * H_) * P_;
+}
+
+void KalmanFilter::Update(const VectorXd &z) {
+ 	VectorXd z_pred = H_ * x_;
+	VectorXd y = z - z_pred;
+	
+	UpdateNewEstimate(y);
 }
 
 void KalmanFilter::UpdateEKF(const VectorXd &z) {
@@ -63,21 +68,12 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
 	between the range - pi and pi.HINT: when working in radians, you can add 2*pi?
 	or subtract 2*pi? until the angle is within the desired range.
 	*/
-	if (y(1) > M_PI)
-		y(1) = y(1) - 2* M_PI;
-	else if (y(1) < -M_PI)
-		y(1) =  y(1) + 2 *M_PI;
+	y(1) = atan2(sin(y(1)), cos(y(1)));
+	// This works, but not sure this is correct logic.
+	//if (y(1) > M_PI)
+	//	y(1) = y(1) - 2* M_PI;
+	//else if (y(1) < -M_PI)
+	//	y(1) =  y(1) + 2 *M_PI;
 
-	MatrixXd Ht = H_.transpose();
-	MatrixXd S = H_ * P_ * Ht + R_;
-	MatrixXd Si = S.inverse();
-	MatrixXd PHt = P_ * Ht;
-	MatrixXd K = PHt * Si;
-
-	//new estimate
-	x_ = x_ + (K * y);
-	long x_size = x_.size();
-	MatrixXd I = MatrixXd::Identity(x_size, x_size);
-	P_ = (I - K * H_) * P_;
-
+	UpdateNewEstimate(y);
 }
